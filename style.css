@@ -1,0 +1,394 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 1200px;
+}
+
+body {
+  background-color: rgb(80, 67, 110);
+  font-family: Geist Pixel;
+  overflow-x: auto;
+}
+
+.pagina {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#cabecalho {
+  background-color: #252e3b;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 55px;
+  margin: 10px auto;
+  padding: 10px;
+  margin-top: 10px;
+  width: 1000px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.562);
+  text-align: center;
+  font-family: Geist Pixel;
+  font-size: 2rem;
+}
+
+.container-sobre {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  margin: 20px auto;
+}
+
+.sobremim,
+.aboutme {
+  width: 565px;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 35px;
+  padding: 25px 25px 9px 25px;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Tiny5;
+  font-size: 70px;
+}
+p {
+  font-family: Geist Pixel;
+}
+.listas {
+  text-align: justify;
+  font-family: Geist Pixel;
+  width: 565px;
+  height: 650px;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  padding-top: 10px;
+}
+.tabela-card {
+  width: 565px;
+  height: 350px;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  font-family: Geist Pixel;
+}
+.texto-grande {
+  font-size: 1.25rem;
+}
+.topo-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.topo-logos h2 {
+  margin: 0;
+}
+
+.practice {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Tiny5;
+  border: 2px solid white;
+  border-radius: 75px;
+  background-color: #252e3b;
+  align-items: center;
+  color: white;
+  width: 1000px;
+  height: 160px;
+  margin: 10px auto;
+  text-align: center;
+}
+.brazil2 {
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.usa2 {
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;
+}
+.usa {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  left: 100px;
+  top: 1px;
+  border-radius: 20px;
+}
+
+.brazil {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  left: 70px;
+  top: 1px;
+  border-radius: 20px;
+}
+
+.icone-lista {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.arroba {
+  color: rgb(255, 153, 0);
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.562);
+  text-align: center;
+  font-family: Tiny5;
+}
+
+.linha-pratica,
+.linha-tabelas {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 35px auto;
+}
+
+.tabela-card {
+  width: 565px;
+  height: 300px;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+
+  display: grid;
+  grid-template-rows: 90px auto;
+}
+
+.tabela-card h4 {
+  color: white;
+  text-align: center;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1.2;
+}
+
+.tabela-wrapper {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #252e3b;
+
+  align-self: start;
+}
+
+.tabela-wrapper table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+}
+
+.tabela-wrapper th,
+.tabela-wrapper td {
+  background-color: #252e3b;
+  color: white;
+  padding: 8px 6px;
+  text-align: center;
+  border: none;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+
+  font-size: 14px;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+}
+
+.tabela-wrapper tr > *:last-child {
+  border-right: none;
+}
+
+.tabela-wrapper tr:last-child > * {
+  border-bottom: none;
+}
+.linha-formularios {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  margin: 35px auto;
+}
+
+.form-card {
+  width: 565px;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  font-family: Geist Pixel;
+}
+
+.form-card h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #d0d9e6;
+}
+.opcoes-radio input[type="radio"] {
+  accent-color: #ff9900;
+}
+.opcoes-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.botoes-form {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.botoes-form input {
+  padding: 6px 12px;
+  border-radius: 40px;
+  background-color: #252e3b;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Tiny5;
+  width: max-content;
+  min-width: 200px;
+
+  padding: 10px 15px;
+  margin: 10px auto;
+
+  background-color: #252e3b;
+  border: 2px solid white;
+  border-radius: 100px;
+
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.htmlcontainer {
+  width: 800px;
+  margin: 35px auto;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  text-align: center;
+}
+
+.htmlcontainer h4 {
+  margin-top: 0;
+}
+
+.html5 {
+  width: 100%;
+  max-width: 750px;
+  display: block;
+  margin: 20px auto 0 auto;
+  border-radius: 30px;
+}
+
+.audiocontainer {
+  width: 800px;
+  margin: 35px auto;
+  background-color: #252e3b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  text-align: center;
+}
+
+.audiocontainer h4 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.audiocontrol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-audio {
+  width: 650px;
+}
+
+.player-audio::-webkit-media-controls-panel {
+  background-color: rgb(255, 255, 255);
+}
+
+.player-audio::-webkit-media-controls-play-button {
+  background-color: #ff9900;
+  border-radius: 50%;
+}
+
+.player-audio::-webkit-media-controls-current-time-display,
+.player-audio::-webkit-media-controls-time-remaining-display {
+  color: #000000;
+}
+
+.textos{
+  height:450px;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 35px;
+  text-align: center;
+  background-color:#252e3b;
+  color: white;
+}
+
+.cat {
+  display: block;
+  margin: 100px auto;
+}
