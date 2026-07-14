@@ -378,17 +378,44 @@ p {
   color: #000000;
 }
 
-.textos{
-  height:450px;
+.textos {
+  height: 450px;
   margin: auto;
   border: 2px solid white;
   border-radius: 35px;
   text-align: center;
-  background-color:#252e3b;
+  background-color: #252e3b;
   color: white;
 }
 
 .cat {
   display: block;
   margin: 100px auto;
+}
+
+.cute-page {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.cat {
+  display: block;
+  margin: 100px auto 30px auto;
+}
+
+.cute-button {
+  font-family: Tiny5, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+  padding: 12px 20px;
+
+  background-color: #252e3b;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 100px;
+
+  cursor: pointer;
 }
