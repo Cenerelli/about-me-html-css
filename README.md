@@ -1,95 +1,57 @@
-# João Cenerelli | Sobre Mim / About Me
+# João Cenerelli | Personal Web Project
 
-## Link do projeto / Project link
+Este é meu primeiro projeto pessoal de desenvolvimento web, criado para praticar HTML, CSS, JavaScript, organização de arquivos, Git, GitHub e publicação com GitHub Pages.
 
-Acesse o site aqui: https://cenerelli.github.io/about-me-html-css/
-
-## Português
-
-Este é meu primeiro projeto de site desenvolvido com HTML e CSS.
-
-O objetivo foi criar uma página de apresentação pessoal bilíngue, em português e inglês, enquanto pratico tags fundamentais de HTML e estilização com CSS.
+O projeto começou como uma prática básica de HTML, mas evoluiu para uma página pessoal com estrutura visual personalizada, alternância de idioma entre português e inglês e um player de áudio customizado com JavaScript.
 
 ## Tecnologias utilizadas
 
 - HTML5
 - CSS3
-- Google Fonts
+- JavaScript
 - Git
 - GitHub
+- GitHub Pages
 
-## Conteúdos praticados
+## Funcionalidades
 
-- Estrutura básica de uma página HTML
-- Uso de `header`, `main`, `section` e `footer`
-- Links externos
-- Imagens e favicon
-- Listas ordenadas e não ordenadas
-- Lista de descrição
-- Tabelas
-- Formulários
-- Áudio
-- Estilização com CSS externo
-- Layout com Flexbox
-- Organização de arquivos em pastas
-
-## Páginas do projeto
-
-- `index.html`: página principal de apresentação pessoal
-- `cute.html`: página secundária acessada pelo botão surpresa
+- Página pessoal bilíngue
+- Alternância entre português e inglês
+- Layout personalizado com CSS
+- Formulários, listas, tabelas, imagens e áudio
+- Player de áudio customizado com JavaScript
+- Publicação com GitHub Pages
 
 ## Objetivo
 
-Este projeto foi criado como parte dos meus estudos iniciais em Desenvolvimento de Sistemas. Ele representa minha primeira prática mais completa juntando estrutura HTML, estilização CSS, organização de arquivos e publicação no GitHub.
-
-## Autor
-
-João Cenerelli
-
-GitHub: [@Cenerelli](https://github.com/Cenerelli)
+Este projeto foi desenvolvido como parte dos meus estudos iniciais em Desenvolvimento de Sistemas, com o objetivo de praticar a base do desenvolvimento web e registrar minha evolução prática com código.
 
 ---
 
-# English
+# João Cenerelli | Personal Web Project
 
-This is my first website project developed with HTML and CSS.
+This is my first personal web development project, created to practice HTML, CSS, JavaScript, file organization, Git, GitHub, and deployment with GitHub Pages.
 
-The goal was to create a bilingual personal presentation page, in Portuguese and English, while practicing fundamental HTML tags and CSS styling.
+The project started as a basic HTML practice, but evolved into a personal page with a custom visual structure, language switching between Portuguese and English, and a custom audio player built with JavaScript.
 
 ## Technologies used
 
 - HTML5
 - CSS3
-- Google Fonts
+- JavaScript
 - Git
 - GitHub
+- GitHub Pages
 
-## Practiced concepts
+## Features
 
-- Basic HTML page structure
-- Use of `header`, `main`, `section`, and `footer`
-- External links
-- Images and favicon
-- Ordered and unordered lists
-- Description list
-- Tables
-- Forms
-- Audio
-- External CSS styling
-- Flexbox layout
-- File organization into folders
-
-## Project pages
-
-- `index.html`: main personal presentation page
-- `cute.html`: secondary page accessed through the surprise button
+- Bilingual personal page
+- Portuguese and English language switch
+- Custom CSS layout
+- Forms, lists, tables, images, and audio
+- Custom audio player with JavaScript
+- Deployment with GitHub Pages
 
 ## Purpose
 
-This project was created as part of my early studies in Systems Development. It represents my first more complete practice combining HTML structure, CSS styling, file organization, and publishing on GitHub.
-
-## Author
-
-João Cenerelli
-
-GitHub: [@Cenerelli](https://github.com/Cenerelli)
+This project was developed as part of my early studies in Systems Development, with the goal of practicing the foundations of web development and documenting my practical progress with code.

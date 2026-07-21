@@ -41,22 +41,38 @@ body {
 }
 
 #cabecalho {
+  width: 990px;
+  min-height: 70px;
+
+  margin: 20px auto;
+  padding: 10px 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
   background-color: #252e3b;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 100px;
-  margin: 10px auto;
-  padding: 10px;
-  width: 925px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.562);
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 55px;
+
   text-align: center;
   font-family: "Geist Pixel", monospace;
   font-size: 2rem;
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.562);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  box-sizing: border-box;
+}
+
+.titulo-cabecalho {
+  flex: 1;
+  text-align: center;
+}
+
+.titulo-cabecalho span {
+  display: block;
 }
 
 .container-sobre {
@@ -125,7 +141,7 @@ p {
 
 .practice {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   font-family: "Tiny5", monospace;
   border: 2px solid white;
   border-radius: 50px;
@@ -133,21 +149,9 @@ p {
   align-items: center;
   color: white;
   width: 565px;
-  height: 160px;
+  height: 100px;
   margin: 45px auto;
   text-align: center;
-}
-.brazil2 {
-  width: 100px;
-  height: 70px;
-  border-radius: 25px;
-  display: flex;
-}
-
-.usa2 {
-  width: 100px;
-  height: 70px;
-  border-radius: 25px;
 }
 .usa {
   width: 100px;
@@ -422,7 +426,9 @@ p {
 
   cursor: pointer;
 
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .botao-play:hover {
@@ -540,8 +546,10 @@ p {
   background-color: #364257;
 }
 .botao-idioma {
-  margin-left: 10px;
-  padding: 8px 16px;
+  width: 95px;
+  flex-shrink: 0;
+
+  padding: 8px 12px;
 
   font-family: "Tiny5", monospace;
   font-size: 1rem;
@@ -551,9 +559,7 @@ p {
 
   border: 2px solid white;
   border-radius: 100px;
-  transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
+
   cursor: pointer;
 }
 
@@ -563,6 +569,7 @@ p {
 }
 
 #lingua {
+  text-align: center;
   font-style: italic;
-  font-size: 30px;
+  font-size: 27px;
 }

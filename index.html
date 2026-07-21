@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>João Cenerelli | About Me / Sobre Mim</title>
+    <title>João Cenerelli | Personal Web Project</title>
 
     <link rel="icon" href="Imagens/boy.png" type="image/png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -12,19 +12,20 @@
   <body>
     <main class="pagina">
       <header id="cabecalho">
-        <span data-lang="pt">
-          Página de apresentação pessoal + prática de tags
-        </span>
+        <div class="titulo-cabecalho">
+          <span data-lang="pt">
+            Página pessoal + prática de desenvolvimento web
+          </span>
 
-        <span data-lang="en" hidden>
-          Personal presentation page + HTML tag practice
-        </span>
+          <span data-lang="en" hidden>
+            Personal page + web development practice
+          </span>
+        </div>
 
         <button id="botao-idioma" class="botao-idioma" type="button">
           English
         </button>
       </header>
-
       <div class="container-sobre">
         <section class="sobremim" data-lang="pt">
           <div class="topo-logos">
@@ -206,24 +207,11 @@
         </section>
       </div>
       <div class="practice">
-        <img
-          class="brazil2"
-          data-lang="pt"
-          src="Imagens/br.svg"
-          alt="Bandeira do Brasil"
-        />
         <h4 id="lingua">
-          <span data-lang="pt"> Prática de tags HTML </span>
+          <span data-lang="pt"> Prática de HTML, CSS e JavaScript </span>
 
-          <span data-lang="en" hidden>HTML tag practice</span>
+          <span data-lang="en" hidden>HTML, CSS and JavaScript practice</span>
         </h4>
-        <img
-          class="usa2"
-          data-lang="en"
-          hidden
-          src="Imagens/usa.png"
-          alt="Bandeira dos EUA"
-        />
       </div>
 
       <div class="linha-pratica">
@@ -749,7 +737,12 @@
         </h4>
 
         <div class="audio-custom">
-          <button id="botao-play" class="botao-play" type="button" aria-label="Tocar áudio"></button>
+          <button
+            id="botao-play"
+            class="botao-play"
+            type="button"
+            aria-label="Tocar áudio"
+          ></button>
 
           <div class="audio-dados">
             <div class="audio-tempos">
