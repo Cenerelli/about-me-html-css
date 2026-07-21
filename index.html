@@ -12,12 +12,21 @@
   <body>
     <main class="pagina">
       <header id="cabecalho">
-        Página de apresentação pessoal + prática de tags HTML Personal
-        presentation page + HTML tag practice
+        <span data-lang="pt">
+          Página de apresentação pessoal + prática de tags
+        </span>
+
+        <span data-lang="en" hidden>
+          Personal presentation page + HTML tag practice
+        </span>
+
+        <button id="botao-idioma" class="botao-idioma" type="button">
+          English
+        </button>
       </header>
 
       <div class="container-sobre">
-        <section class="sobremim">
+        <section class="sobremim" data-lang="pt">
           <div class="topo-logos">
             <h2>Sobre mim</h2>
             <img class="brazil" src="Imagens/br.svg" alt="Bandeira do Brasil" />
@@ -29,39 +38,42 @@
             entender como tudo aquilo que eu via na tela realmente acontecia:
             como computadores e consoles processavam informações, executavam
             jogos e davam vida a toda aquela “mágica” por trás da tecnologia.
-            <br />
-            <br />
+          </p>
 
+          <p>
             A partir disso, comecei a pesquisar mais sobre o mundo
             computacional, principalmente pela área de hardware. Com o tempo,
             esse interesse se tornou um dos meus principais focos. Eu almejava
             trabalhar com tecnologia e, a partir desse ponto, comecei a realizar
             pequenos serviços de formatação de computadores no meu bairro.
-            <br />
-            <br />
+          </p>
 
+          <p>
             Nesse meio tempo, mudei de bairro e continuei oferecendo meus
             serviços nos novos arredores. Assim, fui me aproximando cada vez
             mais da área técnica da informática. Mesmo assim, eu ainda sentia
             que faltava algo. Algumas dúvidas continuavam presentes: afinal,
             como todas essas partes do computador estão realmente conectadas?
             Como eu, quando criança, apertava o botão “Start” e simplesmente
-            começava a jogar meus jogos favoritos? <br />
-            <br />
+            começava a jogar meus jogos favoritos?
+          </p>
 
+          <p>
             Movido por essas dúvidas, pela nostalgia, pela vontade de jogar
             videogame, pelo desejo de aprender cada vez mais e pela experiência
             que eu já vinha adquirindo com formatação de computadores, decidi
             que era o momento ideal para expandir meu conhecimento sobre esse
-            vasto mundo tecnológico. <br />
-            <br />
+            vasto mundo tecnológico.
+          </p>
 
+          <p>
             Foi então que comecei a estudar HTML, CSS e JavaScript por conta
             própria. Eu chegava ao computador e, em vez de jogar, abria o
             YouTube, pesquisava no Google e alimentava minha vontade de entender
-            como tudo aquilo funcionava. <br />
-            <br />
+            como tudo aquilo funcionava.
+          </p>
 
+          <p>
             Depois de um tempo quebrando a cabeça na área da programação,
             percebi que havia chegado a um ponto em que precisava de mais
             direcionamento para continuar evoluindo. Foi assim que decidi
@@ -69,9 +81,10 @@
             de Sistemas. Mesmo ainda estando longe de programar jogos e apenas
             no início desse vasto mundo dos códigos, encontrei um caminho que
             estou disposto a seguir e aprender. Sei que essa formação poderá
-            abrir muitas portas para o meu futuro dentro da tecnologia. <br />
-            <br />
+            abrir muitas portas para o meu futuro dentro da tecnologia.
+          </p>
 
+          <p>
             Hoje, aos 20 anos, sou estudante técnico em Desenvolvimento de
             Sistemas e continuo construindo minha trajetória nesse universo que
             sempre despertou minha curiosidade.
@@ -100,7 +113,7 @@
             </a>
           </p>
         </section>
-        <section class="aboutme">
+        <section class="aboutme" data-lang="en" hidden>
           <div class="topo-logos">
             <h2>About me</h2>
             <img
@@ -116,37 +129,42 @@
             started developing a strong interest in understanding how everything
             I saw on the screen actually worked: how computers and consoles
             processed information, ran games, and brought to life all the
-            “magic” behind technology. <br />
-            <br />
+            “magic” behind technology.
+          </p>
 
+          <p>
             From that point on, I began researching more about the world of
             computing, especially hardware. Over time, this interest became one
             of my main focuses. I wanted to work with technology, and that was
             when I started offering small computer formatting services in my
-            neighborhood. <br />
-            <br />
+            neighborhood.
+          </p>
 
+          <p>
             During that period, I moved to a different neighborhood and
             continued offering my services in the new area. As a result, I
             became increasingly connected to the technical side of IT. Even so,
             I still felt that something was missing. Some questions remained in
             my mind: how are all the parts of a computer actually connected? How
             was I able, as a child, to press the “Start” button and immediately
-            begin playing my favorite games? <br />
-            <br />
+            begin playing my favorite games?
+          </p>
 
+          <p>
             Driven by those questions, by nostalgia, by my passion for video
             games, by my desire to keep learning, and by the experience I had
             already gained with computer formatting, I decided it was the right
-            time to expand my knowledge of this vast technological world. <br />
-            <br />
+            time to expand my knowledge of this vast technological world.
+          </p>
 
+          <p>
             That was when I started studying HTML, CSS, and JavaScript on my
             own. I would sit at my computer and, instead of playing games, open
             YouTube, search on Google, and feed my curiosity about how
-            everything worked. <br />
-            <br />
+            everything worked.
+          </p>
 
+          <p>
             After spending some time struggling with programming, I realized
             that I had reached a point where I needed more guidance to keep
             improving. That was when I decided to look for a technical course in
@@ -154,9 +172,10 @@
             far from programming games and still at the beginning of this vast
             world of code, I found a path that I am willing to follow and learn
             from. I believe this education can open many doors for my future in
-            technology.<br />
-            <br />
+            technology.
+          </p>
 
+          <p>
             Today, at 20 years old, I am a technical student in Systems
             Development, and I continue building my path in this field that has
             always sparked my curiosity.
@@ -187,13 +206,28 @@
         </section>
       </div>
       <div class="practice">
-        <img class="brazil2" src="Imagens/br.svg" alt="Bandeira do Brasil" />
-        <h1>Prática de tags HTML | HTML tag practice</h1>
-        <img class="usa2" src="Imagens/usa.png" alt="Bandeira dos EUA" />
+        <img
+          class="brazil2"
+          data-lang="pt"
+          src="Imagens/br.svg"
+          alt="Bandeira do Brasil"
+        />
+        <h4 id="lingua">
+          <span data-lang="pt"> Prática de tags HTML </span>
+
+          <span data-lang="en" hidden>HTML tag practice</span>
+        </h4>
+        <img
+          class="usa2"
+          data-lang="en"
+          hidden
+          src="Imagens/usa.png"
+          alt="Bandeira dos EUA"
+        />
       </div>
 
       <div class="linha-pratica">
-        <section class="listas">
+        <section class="listas" data-lang="pt">
           <h4>
             Lista de coisas que eu tenho conhecimento em relação ao <i>T.I.</i>:
             (Usando OL "Ordered List")
@@ -283,7 +317,7 @@
           </dl>
         </section>
 
-        <section class="listas">
+        <section class="listas" data-lang="en" hidden>
           <h4>
             List of things I have knowledge of in relation to <i>IT</i>: (Using
             OL "Ordered List")
@@ -375,7 +409,7 @@
       </div>
 
       <div class="linha-tabelas">
-        <section class="tabela-card">
+        <section class="tabela-card" data-lang="pt">
           <h4>
             Uma simples tabela apenas para eu colocar em prática a tag
             <sub>&lt;table&gt;:</sub>
@@ -412,7 +446,7 @@
             </table>
           </div>
         </section>
-        <section class="tabela-card">
+        <section class="tabela-card" data-lang="en" hidden>
           <h4>
             A simple table just to practice the
             <sub>&lt;table&gt;</sub> tag:
@@ -451,7 +485,7 @@
         </section>
       </div>
       <div class="linha-formularios">
-        <section class="form-card">
+        <section class="form-card" data-lang="pt">
           <h4>
             A seguir, um formulário para colocar em prática a tag
             <sub>&lt;form&gt;</sub>:
@@ -516,7 +550,7 @@
           </form>
         </section>
 
-        <section class="form-card">
+        <section class="form-card" data-lang="en" hidden>
           <h4>
             Next, a form to practice the
             <sub>&lt;form&gt;</sub> tag:
@@ -583,55 +617,117 @@
         </section>
       </div>
 
-      <section class="textos">
-        <h4>
-          Alguns exemplos de formatações de texto direto do HTML | Some examples
-          of text formatting directly from HTML:
-        </h4>
+      <section class="textos" data-lang="pt">
+        <h4>Alguns exemplos de formatações de texto direto do HTML:</h4>
 
-        <p>Esse é um texto normal | This is normal text</p>
+        <p>Esse é um texto normal</p>
+
         <p>
-          <strong> Esse é um texto em negrito | This is bold text </strong>
-          (Strong/Bold, mas aqui foi usado o elemento
-          <code>&lt;strong&gt;</code>) | (The <code>&lt;strong&gt;</code>
-          element was used here)
+          <strong>Esse é um texto em negrito</strong>
+          (foi usado o elemento <code>&lt;strong&gt;</code>)
         </p>
+
         <p>
-          <em>
-            Esse é um texto em itálico (Italic) | This is italic text (Italic)
-          </em>
+          <em>Esse é um texto em itálico</em>
+          (Italic)
         </p>
+
         <p>
-          <mark> Esse é um texto marcado | This is marked text </mark> (Marked)
+          <mark>Esse é um texto marcado</mark>
+          (Marked)
         </p>
+
         <p>
-          <small> Esse é um texto pequeno | This is small text </small> (Small)
+          <small>Esse é um texto pequeno</small>
+          (Small)
         </p>
+
         <p>
-          <span class="texto-grande"
-            >Esse é um texto grande | This is large text
-          </span>
-          (feito com CSS / Created with CSS)
+          <span class="texto-grande">Esse é um texto grande</span>
+          (feito com CSS)
         </p>
+
         <p>
-          <del> Esse é um texto riscado | This is strikethrough text </del>
+          <del>Esse é um texto riscado</del>
           (Deleted)
         </p>
+
         <p>
-          Esse é um texto com | This is text with <sub> SUB </sub> (Subscript)
+          Esse é um texto com <sub>SUB</sub>
+          (Subscript)
         </p>
+
         <p>
-          Esse é um texto com | This is text with <sup> SUP </sup> (Superscript)
+          Esse é um texto com <sup>SUP</sup>
+          (Superscript)
         </p>
+
         <p>
-          <ins>Esse é um texto com | This is text with INS </ins> (Inserted)
+          <ins>Esse é um texto inserido</ins>
+          (Inserted)
+        </p>
+      </section>
+
+      <section class="textos" data-lang="en" hidden>
+        <h4>Some examples of text formatting directly from HTML:</h4>
+
+        <p>This is normal text</p>
+
+        <p>
+          <strong>This is bold text</strong>
+          (the <code>&lt;strong&gt;</code> element was used)
+        </p>
+
+        <p>
+          <em>This is italic text</em>
+          (Italic)
+        </p>
+
+        <p>
+          <mark>This is marked text</mark>
+          (Marked)
+        </p>
+
+        <p>
+          <small>This is small text</small>
+          (Small)
+        </p>
+
+        <p>
+          <span class="texto-grande">This is large text</span>
+          (created with CSS)
+        </p>
+
+        <p>
+          <del>This is strikethrough text</del>
+          (Deleted)
+        </p>
+
+        <p>
+          This is text with <sub>SUB</sub>
+          (Subscript)
+        </p>
+
+        <p>
+          This is text with <sup>SUP</sup>
+          (Superscript)
+        </p>
+
+        <p>
+          <ins>This is inserted text</ins>
+          (Inserted)
         </p>
       </section>
 
       <section class="htmlcontainer">
         <h4>
-          Apenas para colocar em prática a tag <sub>&lt;img&gt;</sub> | Just to
-          put the tag into practice <sub>&lt;img&gt;</sub>
+          <span data-lang="pt">
+            Apenas para colocar em prática a tag <sub>&lt;img&gt;</sub>
+          </span>
+
+          <span data-lang="en" hidden>
+            Just to practice the <sub>&lt;img&gt;</sub> tag
+          </span>
         </h4>
 
         <img
@@ -643,9 +739,15 @@
 
       <section class="audiocontainer">
         <h4>
-          Apenas para colocar em prática a tag <sub>&lt;audio&gt;</sub> | Just
-          to put the tag into practice <sub>&lt;audio&gt;</sub>
+          <span data-lang="pt">
+            Apenas para colocar em prática a tag <sub>&lt;audio&gt;</sub>
+          </span>
+
+          <span data-lang="en" hidden>
+            Just to practice the <sub>&lt;audio&gt;</sub> tag
+          </span>
         </h4>
+
         <div class="audiocontrol">
           <audio class="player-audio" controls>
             <source src="Audio/ultimate-shitpost.mp3" type="audio/mpeg" />
@@ -655,14 +757,16 @@
 
       <footer>
         <a
-          class="botao"
+          class="botao botao-cute"
           href="cute.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Clique aqui para uma surpresa! | Click here for a surprise!
+          <span data-lang="pt">Clique aqui para uma surpresa!</span>
+          <span data-lang="en" hidden>Click here for a surprise!</span>
         </a>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

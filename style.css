@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,26 +39,31 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
 #cabecalho {
   background-color: #252e3b;
   border: 2px solid rgb(255, 255, 255);
-  border-radius: 55px;
+  border-radius: 100px;
   margin: 10px auto;
   padding: 10px;
-  margin-top: 10px;
-  width: 1000px;
+  width: 925px;
   color: rgb(255, 255, 255);
   text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.562);
   text-align: center;
   font-family: "Geist Pixel", monospace;
   font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .container-sobre {
   display: flex;
+  justify-content: center;
   gap: 30px;
-  margin-top: 20px;
-  margin: 20px auto;
+  margin: 30px auto 45px auto;
 }
 
 .sobremim,
@@ -63,9 +72,20 @@ body {
   background-color: #252e3b;
   color: white;
   border: 2px solid rgb(255, 255, 255);
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px 25px 9px 25px;
   text-align: justify;
+}
+
+.linha-pratica,
+.linha-tabelas,
+.linha-formularios {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 45px auto;
 }
 
 h2 {
@@ -83,20 +103,11 @@ p {
   background-color: #252e3b;
   color: white;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px;
   padding-top: 10px;
 }
-.tabela-card {
-  width: 565px;
-  height: 350px;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
-  border-radius: 35px;
-  padding: 25px;
-  font-family: "Geist Pixel", monospace;
-}
+
 .texto-grande {
   font-size: 1.25rem;
 }
@@ -117,26 +128,26 @@ p {
   justify-content: space-evenly;
   font-family: "Tiny5", monospace;
   border: 2px solid white;
-  border-radius: 75px;
+  border-radius: 50px;
   background-color: #252e3b;
   align-items: center;
   color: white;
-  width: 1000px;
+  width: 565px;
   height: 160px;
-  margin: 10px auto;
+  margin: 45px auto;
   text-align: center;
 }
 .brazil2 {
   width: 100px;
   height: 70px;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
 }
 
 .usa2 {
   width: 100px;
   height: 70px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 .usa {
   width: 100px;
@@ -144,7 +155,7 @@ p {
   position: relative;
   left: 100px;
   top: 1px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .brazil {
@@ -153,7 +164,7 @@ p {
   position: relative;
   left: 70px;
   top: 1px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .icone-lista {
@@ -170,25 +181,15 @@ p {
   text-align: center;
   font-family: "Tiny5", monospace;
 }
-
-
-.linha-pratica,
-.linha-tabelas {
-  display: flex;
-  gap: 35px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  margin: 35px auto;
-}
-
 .tabela-card {
   width: 565px;
   height: 300px;
   background-color: #252e3b;
   color: white;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px;
+  font-family: "Geist Pixel", monospace;
 
   display: grid;
   grid-template-rows: 90px auto;
@@ -209,7 +210,7 @@ p {
 .tabela-wrapper {
   width: 100%;
   border: 2px solid white;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   background-color: #252e3b;
 
@@ -245,12 +246,6 @@ p {
 .tabela-wrapper tr:last-child > * {
   border-bottom: none;
 }
-.linha-formularios {
-  display: flex;
-  gap: 35px;
-  align-items: flex-start;
-  margin: 35px auto;
-}
 
 .grupo-radio {
   border: none;
@@ -262,19 +257,12 @@ p {
   margin-bottom: 10px;
 }
 
-.opcoes-radio {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
 .form-card {
   width: 565px;
   background-color: #252e3b;
   color: white;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px;
   font-family: "Geist Pixel", monospace;
 }
@@ -299,7 +287,7 @@ p {
 
 .campo input {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid rgb(0, 0, 0);
   background-color: #d0d9e6;
 }
@@ -321,40 +309,53 @@ p {
 
 .botoes-form input {
   padding: 6px 12px;
-  border-radius: 40px;
+  border-radius: 25px;
   background-color: #252e3b;
   color: white;
   border-color: white;
   cursor: pointer;
 }
-.botao {
+.botao-cute {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Tiny5", monospace;
-  width: max-content;
-  min-width: 200px;
 
-  padding: 10px 15px;
-  margin: 10px auto;
+  width: max-content;
+  min-width: 260px;
+
+  padding: 10px 18px;
+  margin: 30px auto;
+
+  font-family: "Tiny5", monospace;
+  font-size: 1rem;
 
   background-color: #252e3b;
+  color: white;
+
   border: 2px solid white;
   border-radius: 100px;
 
-  color: white;
   text-decoration: none;
-  white-space: nowrap;
-  box-sizing: border-box;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.botao-cute:hover {
+  transform: scale(1.08);
+  background-color: #364257;
 }
 
 .htmlcontainer {
-  width: 800px;
-  margin: 35px auto;
+  width: 565px;
+  height: 450px;
+  margin: 50px auto;
   background-color: #252e3b;
   color: white;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px;
   text-align: center;
 }
@@ -364,20 +365,20 @@ p {
 }
 
 .html5 {
-  width: 100%;
-  max-width: 750px;
+  width: 450px;
+  height: 340px;
   display: block;
   margin: 20px auto 0 auto;
   border-radius: 30px;
 }
 
 .audiocontainer {
-  width: 800px;
+  width: 565px;
   margin: 35px auto;
   background-color: #252e3b;
   color: white;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   padding: 25px;
   text-align: center;
 }
@@ -395,16 +396,16 @@ p {
 }
 
 .player-audio {
-  width: 650px;
+  width: 565px;
 }
 
 .player-audio::-webkit-media-controls-panel {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .player-audio::-webkit-media-controls-play-button {
   background-color: #ff9900;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .player-audio::-webkit-media-controls-current-time-display,
@@ -412,11 +413,16 @@ p {
   color: #000000;
 }
 
+.player-audio::-webkit-progress-bar {
+  color: aqua;
+}
+
 .textos {
   height: 450px;
+  width: 565px;
   margin: auto;
   border: 2px solid white;
-  border-radius: 35px;
+  border-radius: 50px;
   text-align: center;
   background-color: #252e3b;
   color: white;
@@ -424,7 +430,7 @@ p {
 
 .cat {
   display: block;
-  margin: 100px auto;
+  margin: 100px auto 30px auto;
 }
 
 .cute-page {
@@ -432,11 +438,6 @@ p {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-}
-
-.cat {
-  display: block;
-  margin: 100px auto 30px auto;
 }
 
 .cute-button {
@@ -451,5 +452,39 @@ p {
   border: 2px solid white;
   border-radius: 100px;
 
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
   cursor: pointer;
+}
+.cute-button:hover {
+  transform: scale(1.05);
+  background-color: #364257;
+}
+.botao-idioma {
+  margin-left: 10px;
+  padding: 8px 16px;
+
+  font-family: "Tiny5", monospace;
+  font-size: 1rem;
+
+  background-color: #252e3b;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 100px;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.botao-idioma:hover {
+  transform: scale(1.05);
+  background-color: #364257;
+}
+
+#lingua {
+  font-style: italic;
+  font-size: 30px;
 }
