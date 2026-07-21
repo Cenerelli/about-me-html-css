@@ -457,7 +457,7 @@
             <sub>&lt;form&gt;</sub>:
           </h4>
 
-          <form>
+          <form action="#" method="post" onsubmit="return false;">
             <div class="campo">
               <label for="nome-pt">Digite aqui seu nome:</label>
               <input
@@ -465,6 +465,8 @@
                 id="nome-pt"
                 name="nome"
                 placeholder="Digite seu nome"
+                autocomplete="name"
+                required
               />
             </div>
 
@@ -475,31 +477,37 @@
                 id="email-pt"
                 name="email"
                 placeholder="Digite seu email"
+                autocomplete="email"
+                required
               />
             </div>
 
-            <p>Selecione seu sexo abaixo:</p>
+            <fieldset class="grupo-radio">
+              <legend>Selecione seu sexo abaixo:</legend>
 
-            <div class="opcoes-radio">
-              <input
-                type="radio"
-                id="masculino"
-                name="genero-pt"
-                value="masculino"
-              />
-              <label for="masculino">Masculino</label>
+              <div class="opcoes-radio">
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="genero-pt"
+                  value="masculino"
+                  required
+                />
+                <label for="masculino">Masculino</label>
 
-              <input
-                type="radio"
-                id="feminino"
-                name="genero-pt"
-                value="feminino"
-              />
-              <label for="feminino">Feminino</label>
+                <input
+                  type="radio"
+                  id="feminino"
+                  name="genero-pt"
+                  value="feminino"
+                />
+                <label for="feminino">Feminino</label>
 
-              <input type="radio" id="outro" name="genero-pt" value="outro" />
-              <label for="outro">Outro</label>
-            </div>
+                <input type="radio" id="outro" name="genero-pt" value="outro" />
+
+                <label for="outro">Outro</label>
+              </div>
+            </fieldset>
 
             <div class="botoes-form">
               <input type="submit" value="Enviar" />
@@ -514,7 +522,7 @@
             <sub>&lt;form&gt;</sub> tag:
           </h4>
 
-          <form>
+          <form action="#" method="post" onsubmit="return false;">
             <div class="campo">
               <label for="name-en">Enter your name:</label>
               <input
@@ -522,6 +530,8 @@
                 id="name-en"
                 name="name"
                 placeholder="Enter your name"
+                autocomplete="name"
+                required
               />
             </div>
 
@@ -532,21 +542,38 @@
                 id="email-en"
                 name="email"
                 placeholder="Enter your email"
+                autocomplete="email"
+                required
               />
             </div>
 
-            <p>Select your gender below:</p>
+            <fieldset class="grupo-radio">
+              <legend>Select your gender below:</legend>
 
-            <div class="opcoes-radio">
-              <input type="radio" id="male" name="gender-en" value="male" />
-              <label for="male">Male</label>
+              <div class="opcoes-radio">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender-en"
+                  value="male"
+                  required
+                />
+                <label for="male">Male</label>
 
-              <input type="radio" id="female" name="gender-en" value="female" />
-              <label for="female">Female</label>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender-en"
+                  value="female"
+                />
 
-              <input type="radio" id="other" name="gender-en" value="other" />
-              <label for="other">Other</label>
-            </div>
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender-en" value="other" />
+
+                <label for="other">Other</label>
+              </div>
+            </fieldset>
 
             <div class="botoes-form">
               <input type="submit" value="Submit" />
@@ -555,6 +582,7 @@
           </form>
         </section>
       </div>
+
       <section class="textos">
         <h4>
           Alguns exemplos de formatações de texto direto do HTML | Some examples

@@ -252,6 +252,23 @@ p {
   margin: 35px auto;
 }
 
+.grupo-radio {
+  border: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.grupo-radio legend {
+  margin-bottom: 10px;
+}
+
+.opcoes-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .form-card {
   width: 565px;
   background-color: #252e3b;
