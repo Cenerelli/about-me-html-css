@@ -389,32 +389,110 @@ p {
   text-align: center;
 }
 
-.audiocontrol {
+.audio-custom {
+  width: 500px;
+  margin: 0 auto;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 20px;
+
+  background-color: rgb(80, 67, 110);
+  border: 2px solid white;
+  border-radius: 100px;
+
+  padding: 15px 20px;
 }
 
-.player-audio {
-  width: 565px;
+.botao-play {
+  width: 55px;
+  height: 55px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #252e3b;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.player-audio::-webkit-media-controls-panel {
-  background-color: white;
+.botao-play:hover {
+  transform: scale(1.08);
+  background-color: #364257;
 }
 
-.player-audio::-webkit-media-controls-play-button {
-  background-color: #ff9900;
-  border-radius: 100%;
+.botao-play::before {
+  content: "";
+
+  position: absolute;
+  left: 52%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 0;
+  height: 0;
+
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid white;
 }
 
-.player-audio::-webkit-media-controls-current-time-display,
-.player-audio::-webkit-media-controls-time-remaining-display {
-  color: #000000;
+.botao-play.tocando::before {
+  display: none;
 }
 
-.player-audio::-webkit-progress-bar {
-  color: aqua;
+.botao-play.tocando::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 18px;
+  height: 22px;
+
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 35%,
+    transparent 35%,
+    transparent 65%,
+    white 65%,
+    white 100%
+  );
+}
+
+.audio-dados {
+  flex: 1;
+}
+
+.audio-tempos {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+  padding-right: 10px;
+  color: white;
+  font-family: "Geist Pixel", monospace;
+  font-size: 0.9rem;
+}
+
+.barra-audio {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #364257;
 }
 
 .textos {

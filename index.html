@@ -748,9 +748,28 @@
           </span>
         </h4>
 
-        <div class="audiocontrol">
-          <audio class="player-audio" controls>
+        <div class="audio-custom">
+          <button id="botao-play" class="botao-play" type="button" aria-label="Tocar áudio"></button>
+
+          <div class="audio-dados">
+            <div class="audio-tempos">
+              <span id="tempo-atual">0:00</span>
+              <span id="duracao-audio">0:00</span>
+            </div>
+
+            <input
+              id="barra-audio"
+              class="barra-audio"
+              type="range"
+              value="0"
+              min="0"
+              step="1"
+            />
+          </div>
+
+          <audio id="audio-principal">
             <source src="Audio/ultimate-shitpost.mp3" type="audio/mpeg" />
+            Seu navegador não suporta áudio.
           </audio>
         </div>
       </section>
