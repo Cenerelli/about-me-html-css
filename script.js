@@ -1,3 +1,5 @@
+//idioma
+
 const botaoIdioma = document.getElementById("botao-idioma");
 const elementosTraduziveis = document.querySelectorAll("[data-lang]");
 
@@ -18,11 +20,7 @@ botaoIdioma.addEventListener("click", () => {
   aplicarIdioma(idiomaAtual);
 });
 
-aplicarIdioma(idiomaAtual);
-
-// ==============================
-// Player de áudio customizado
-// ==============================
+//audio embaixo
 
 const audioPrincipal = document.getElementById("audio-principal");
 const botaoPlay = document.getElementById("botao-play");

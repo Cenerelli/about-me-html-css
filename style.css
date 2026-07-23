@@ -1,3 +1,4 @@
+/* cache das fonts */
 @font-face {
   font-family: "Tiny5";
   src: url("Fonts/Tiny5.ttf") format("truetype");
@@ -21,7 +22,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* corpo da pagina pré-definido pra nao dar resize*/
 html,
 body {
   margin: 0;
@@ -33,7 +34,7 @@ body {
   font-family: "Geist Pixel", monospace;
   overflow-x: auto;
 }
-
+/* main pra centralizar o conteúdo*/
 .pagina {
   width: 1200px;
   margin: 0 auto;
@@ -41,22 +42,22 @@ body {
 }
 
 #cabecalho {
-  width: 990px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: auto;
   min-height: 70px;
 
-  margin: 20px auto;
   padding: 10px 25px;
 
-  display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 
-  background-color: #252e3b;
-  color: white;
+  background-color: rgb(80, 67, 110);
+  color: #f4f1de;
 
-  border: 2px solid white;
-  border-radius: 55px;
+  border: 30px solid #0e0322;
+  border-radius: 100px;
 
   text-align: center;
   font-family: "Geist Pixel", monospace;
@@ -69,10 +70,13 @@ body {
 .titulo-cabecalho {
   flex: 1;
   text-align: center;
+  flex-wrap: nowrap;
+  font-weight: bolder;
 }
 
 .titulo-cabecalho span {
   display: block;
+  flex-wrap: nowrap;
 }
 
 .container-sobre {
@@ -85,12 +89,24 @@ body {
 .sobremim,
 .aboutme {
   width: 565px;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid rgb(255, 255, 255);
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px 25px 9px 25px;
   text-align: justify;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.sobremim:hover,
+.aboutme:hover {
+  transform: scale(1.02);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
 }
 
 .linha-pratica,
@@ -116,17 +132,31 @@ p {
   font-family: "Geist Pixel", monospace;
   width: 565px;
   height: 650px;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px;
   padding-top: 10px;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
+.listas:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
+/* text formatting do texto grande isolado aqui no css tadinho */
 .texto-grande {
   font-size: 1.25rem;
 }
+
+/* br/usa flags*/
 .topo-logos {
   display: flex;
   justify-content: flex-start;
@@ -138,21 +168,35 @@ p {
 .topo-logos h2 {
   margin: 0;
 }
-
+/* titulo da secao html tag practice */
 .practice {
   display: flex;
   justify-content: center;
   font-family: "Tiny5", monospace;
-  border: 2px solid white;
+  border: 2px solid #0e0322;
   border-radius: 50px;
-  background-color: #252e3b;
+  background-color: #0e0322;
   align-items: center;
-  color: white;
+  color: #f4f1de;
   width: 565px;
   height: 100px;
+  font-size: 2rem;
   margin: 45px auto;
   text-align: center;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
+
+.practice:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
+/*flag */
 .usa {
   width: 100px;
   height: 70px;
@@ -178,29 +222,54 @@ p {
   vertical-align: middle;
   margin-right: 6px;
 }
-
+/* os dois hyperlinks */
 .arroba {
-  color: rgb(255, 153, 0);
+  color: #f4f1de;
   text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.562);
   text-align: center;
   font-family: "Tiny5", monospace;
+  text-decoration: none;
+
+  border-radius: 30px;
+  padding: 3px 10px 3px;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+.arroba:hover {
+  transform: scale(1);
+  background-color: #0e0322;
+  color: #8e4a49;
+  border-color: #8e4a49;
 }
 .tabela-card {
   width: 565px;
   height: 300px;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px;
   font-family: "Geist Pixel", monospace;
-
   display: grid;
   grid-template-rows: 90px auto;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
+.tabela-card:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #0e0322;
+  border-color: #8e4a49;
+}
 .tabela-card h4 {
-  color: white;
+  color: #f4f1de;
   text-align: center;
   margin: 0;
 
@@ -213,10 +282,10 @@ p {
 
 .tabela-wrapper {
   width: 100%;
-  border: 2px solid white;
+  border: 1px solid#8E4A49;
   border-radius: 25px;
   overflow: hidden;
-  background-color: #252e3b;
+  background-color: #8e4a49;
 
   align-self: start;
 }
@@ -230,13 +299,13 @@ p {
 
 .tabela-wrapper th,
 .tabela-wrapper td {
-  background-color: #252e3b;
-  color: white;
+  background-color: #0e0322;
+  color: #f4f1de;
   padding: 8px 6px;
   text-align: center;
   border: none;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 1px solid #8e4a49;
+  border-bottom: 1px solid #8e4a49;
 
   font-size: 14px;
   line-height: 1.1;
@@ -263,14 +332,25 @@ p {
 
 .form-card {
   width: 565px;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px;
   font-family: "Geist Pixel", monospace;
+
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
+.form-card:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
 .form-card h4 {
   text-align: center;
   margin-top: 0;
@@ -291,12 +371,13 @@ p {
 
 .campo input {
   padding: 10px;
-  border-radius: 15px;
-  border: 1px solid rgb(0, 0, 0);
-  background-color: #d0d9e6;
+  border-radius: 100px;
+  border: 1px solid #f4f1de;
+  background-color: #f4f1de;
 }
+
 .opcoes-radio input[type="radio"] {
-  accent-color: #ff9900;
+  accent-color: #8e4a49;
 }
 .opcoes-radio {
   display: flex;
@@ -314,11 +395,28 @@ p {
 .botoes-form input {
   padding: 6px 12px;
   border-radius: 25px;
-  background-color: #252e3b;
-  color: white;
-  border-color: white;
+  border-color: #0e0322;
+  background-color: #0e0322;
+  color: #f4f1de;
+
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-style: solid;
   cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
+
+.botoes-form input:hover {
+  transform: scale(1.05);
+  background-color: #0e0322;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
+/* botao da pagina surpresa*/
 .botao-cute {
   display: flex;
   align-items: center;
@@ -333,35 +431,40 @@ p {
   font-family: "Tiny5", monospace;
   font-size: 1rem;
 
-  background-color: #252e3b;
-  color: white;
-
-  border: 2px solid white;
-  border-radius: 100px;
-
+  background-color: #0e0322;
+  border: 2px solid #0e0322;
+  border-radius: 50px;
+  color: #f4f1de;
   text-decoration: none;
   cursor: pointer;
-
   transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
-
 .botao-cute:hover {
-  transform: scale(1.08);
-  background-color: #364257;
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #0e0322;
+  border-color: #8e4a49;
 }
-
+/* tag img */
 .htmlcontainer {
   width: 565px;
   height: 450px;
   margin: 50px auto;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px;
   text-align: center;
+  cursor: pointer;
+
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
 .htmlcontainer h4 {
@@ -376,20 +479,39 @@ p {
   border-radius: 30px;
 }
 
+.htmlcontainer:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
+/* player de audio personalizado */
 .audiocontainer {
   width: 565px;
   margin: 35px auto;
-  background-color: #252e3b;
-  color: white;
-  border: 2px solid white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   padding: 25px;
   text-align: center;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.audiocontainer:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
 }
 
 .audiocontainer h4 {
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -400,12 +522,21 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
-
-  background-color: rgb(80, 67, 110);
-  border: 2px solid white;
+  background-color: #0e0322;
+  border: 2px solid #0e0322;
   border-radius: 100px;
-
   padding: 15px 20px;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+.audio-custom:hover {
+  transform: scale(1.05);
+  background-color: #0e0322;
+  color: #f4f1de;
+  border-color: #0e0322;
 }
 
 .botao-play {
@@ -418,22 +549,22 @@ p {
   align-items: center;
   justify-content: center;
 
-  background-color: #252e3b;
-  color: white;
+  background-color: rgb(80, 67, 110);
+  color: #f4f1de;
 
-  border: 2px solid white;
+  border: rgb(80, 67, 110);
   border-radius: 50%;
 
   cursor: pointer;
-
   transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
 .botao-play:hover {
   transform: scale(1.08);
-  background-color: #364257;
+  background-color: #8e4a49;
 }
 
 .botao-play::before {
@@ -450,7 +581,7 @@ p {
 
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
-  border-left: 17px solid white;
+  border-left: 17px solid #f4f1de;
 }
 
 .botao-play.tocando::before {
@@ -490,7 +621,7 @@ p {
 
   margin-bottom: 8px;
   padding-right: 10px;
-  color: white;
+  color: #f4f1de;
   font-family: "Geist Pixel", monospace;
   font-size: 0.9rem;
 }
@@ -498,20 +629,32 @@ p {
 .barra-audio {
   width: 100%;
   cursor: pointer;
-  accent-color: #364257;
+  accent-color: #f4f1de;
 }
-
+/* textos formatados*/
 .textos {
   height: 450px;
   width: 565px;
   margin: auto;
-  border: 2px solid white;
+  border: 2px solid #0e0322;
   border-radius: 50px;
   text-align: center;
-  background-color: #252e3b;
-  color: white;
+  background-color: #0e0322;
+  color: #f4f1de;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
+.textos:hover {
+  transform: scale(1.05);
+  background-color: #8e4a49;
+  color: #f4f1de;
+  border-color: #8e4a49;
+}
+/* pagina surpresa  */
 .cat {
   display: block;
   margin: 100px auto 30px auto;
@@ -530,44 +673,74 @@ p {
 
   padding: 12px 20px;
 
-  background-color: #252e3b;
-  color: white;
-
-  border: 2px solid white;
-  border-radius: 100px;
-
-  transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
+  background-color: #0e0322;
+  border: 2px solid #0e0322;
+  border-radius: 50px;
+  color: #f4f1de;
   cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 .cute-button:hover {
   transform: scale(1.05);
-  background-color: #364257;
+  background-color: #8e4a49;
+  color: #0e0322;
+  border-color: #8e4a49;
 }
 .botao-idioma {
   width: 95px;
   flex-shrink: 0;
-
   padding: 8px 12px;
 
   font-family: "Tiny5", monospace;
-  font-size: 1rem;
+  font-size: 12px;
 
-  background-color: #252e3b;
-  color: white;
-
-  border: 2px solid white;
-  border-radius: 100px;
+  background-color: #0e0322;
+  border: 2px solid #0e0322;
+  border-radius: 50px;
+  color: #f4f1de;
 
   cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 }
 
 .botao-idioma:hover {
-  transform: scale(1.05);
-  background-color: #364257;
+  transform: scale(1.09);
+  background-color: #8e4a49;
+  border-color: #8e4a49;
+  color: #0e0322;
 }
 
+.mudar-secao {
+  width: 150px;
+  flex-shrink: 0;
+
+  padding: 8px 12px;
+  font-family: "Tiny5", monospace;
+  font-size: 12px;
+  background-color: #0e0322;
+  border: 2px solid #0e0322;
+  border-radius: 50px;
+  color: #f4f1de;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease,
+    background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.mudar-secao:hover {
+  transform: scale(1.09);
+  background-color: #8e4a49;
+  color: #0e0322;
+  border-color: #8e4a49;
+}
 #lingua {
   text-align: center;
   font-style: italic;

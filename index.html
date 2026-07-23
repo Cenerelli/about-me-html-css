@@ -10,27 +10,47 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <main class="pagina">
-      <header id="cabecalho">
-        <div class="titulo-cabecalho">
-          <span data-lang="pt">
-            Página pessoal + prática de desenvolvimento web
-          </span>
 
-          <span data-lang="en" hidden>
-            Personal page + web development practice
-          </span>
-        </div>
+      <div class="contorno">
+    <main class="pagina">
+       <!--Cabeçalho-->
+    <header id="cabecalho">
+        <!--Títulos do cabeçalho-->
+          <div class="titulo-cabecalho">
+            <span data-lang="pt">
+              Página pessoal + prática de desenvolvimento web
+            </span>
+
+            <span data-lang="en" hidden>
+              Personal page + web development practice
+            </span>
+
+        <!--Títulos do cabeçalho-->
+           <!-- Botões pra mudar de seção e idioma--> 
+          </div>
+         <a href="#lingua" id="mudar-secao" class="mudar-secao" data-lang="pt">
+          Seção de tags html
+         </a>
+         <a href="#lingua" id="mudar-secao" class="mudar-secao" data-lang="en" hidden>
+          Html tag section
+         </a>
 
         <button id="botao-idioma" class="botao-idioma" type="button">
           English
         </button>
+</div> 
+       
+           <!-- Botões pra mudar de seção e idioma-->
       </header>
+      
+       <!--Cabeçalho-->
+
+      <!--secao sobre mim-->
       <div class="container-sobre">
         <section class="sobremim" data-lang="pt">
           <div class="topo-logos">
             <h2>Sobre mim</h2>
-            <img class="brazil" src="Imagens/br.svg" alt="Bandeira do Brasil" />
+            <img class="brazil" src="Imagens/br.svg" alt="Bandeira do Brasil" /><!-- brflag--> 
           </div>
           <p>
             Prazer, meu nome é João. Desde pequeno, sempre fui apaixonado por
@@ -91,6 +111,7 @@
             sempre despertou minha curiosidade.
           </p>
           <p>
+            <!-- hyperlinks-->
             Meu GitHub:
             <a
               class="arroba"
@@ -113,16 +134,22 @@
               @joaocenerelli
             </a>
           </p>
+
+           <!-- hyperlinks-->
         </section>
+        <!--secao sobre mim-->
+        <!-- aboutmesection-->
         <section class="aboutme" data-lang="en" hidden>
           <div class="topo-logos">
             <h2>About me</h2>
-            <img
+            <!-- usaflag--> 
+             <img
               class="usa"
-              src="Imagens/usa.png"
+              src="Imagens/usa.png" 
               alt="Bandeira dos Estados Unidos"
             />
           </div>
+          <!--usaflag-->
           <p>
             Nice to meet you, my name is João. Since I was a child, I have
             always been passionate about video games. I grew up closely
@@ -182,6 +209,8 @@
             always sparked my curiosity.
           </p>
           <p>
+
+            <!--hyperlinks-->
             GitHub:
             <a
               class="arroba"
@@ -204,17 +233,25 @@
               @joaocenerelli
             </a>
           </p>
+          
+            <!--hyperlinks-->
         </section>
       </div>
-      <div class="practice">
-        <h4 id="lingua">
-          <span data-lang="pt"> Prática de HTML, CSS e JavaScript </span>
+<!-- aboutmesection-->
 
-          <span data-lang="en" hidden>HTML, CSS and JavaScript practice</span>
+
+      <!--titulo da seção das tags-->
+      <div  class="practice">
+        <h4  id="lingua">
+          <span data-lang="pt" id="practice"> Prática de HTML, CSS e JavaScript </span>
+
+          <span  data-lang="en" hidden>HTML, CSS and JavaScript practice</span>
         </h4>
       </div>
+      
+      <!--titulo da seção das tags-->
 
-      <div class="linha-pratica">
+      <div  class="linha-pratica"> <!--ol-->
         <section class="listas" data-lang="pt">
           <h4>
             Lista de coisas que eu tenho conhecimento em relação ao <i>T.I.</i>:
@@ -255,8 +292,8 @@
               JavaScript
             </li>
           </ol>
-
-          <h4>Lista de <i>hobbies</i>: (Usando UL "Unordered List")</h4>
+<!--ol-->
+          <h4>Lista de <i>hobbies</i>: (Usando UL "Unordered List")</h4> <!--ul-->
 
           <ul>
             <li>Ler livros 📚</li>
@@ -267,14 +304,15 @@
             <li>Praticar esportes 🏃‍♂️</li>
             <li>Assistir a filmes e séries 🎬</li>
           </ul>
+          <!--ul-->
 
-          <h4>Lista de <i>descrição</i>: (Usando DL "Description List")</h4>
+          <h4>Lista de <i>descrição</i>: (Usando DL "Description List")</h4>  <!--dl-->
 
           <dl>
             <dt>
               <img
                 class="icone-lista"
-                src="Imagens/html icon.png"
+                src="Imagens/html icon.png" 
                 alt="Ícone do HTML"
               />
               HTML
@@ -304,7 +342,8 @@
             </dd>
           </dl>
         </section>
-
+        <!--dl-->
+<!-- english version-->
         <section class="listas" data-lang="en" hidden>
           <h4>
             List of things I have knowledge of in relation to <i>IT</i>: (Using
@@ -395,7 +434,9 @@
           </dl>
         </section>
       </div>
-
+      
+<!-- english version-->
+<!--tabela-->
       <div class="linha-tabelas">
         <section class="tabela-card" data-lang="pt">
           <h4>
@@ -471,7 +512,8 @@
             </table>
           </div>
         </section>
-      </div>
+      </div><!--tabela-->
+      <!--forms-->
       <div class="linha-formularios">
         <section class="form-card" data-lang="pt">
           <h4>
@@ -605,6 +647,8 @@
         </section>
       </div>
 
+      <!--forms-->
+      <!--textformatting-->
       <section class="textos" data-lang="pt">
         <h4>Alguns exemplos de formatações de texto direto do HTML:</h4>
 
@@ -707,6 +751,9 @@
         </p>
       </section>
 
+      <!--textformatting-->
+
+      <!--imgtag-->
       <section class="htmlcontainer">
         <h4>
           <span data-lang="pt">
@@ -725,6 +772,8 @@
         />
       </section>
 
+      <!--imgtag-->
+      <!--audiotag-->
       <section class="audiocontainer">
         <h4>
           <span data-lang="pt">
@@ -767,9 +816,11 @@
         </div>
       </section>
 
+      <!--audiotag-->
+      <!--rodapé-->
       <footer>
         <a
-          class="botao botao-cute"
+          class=" botao-cute"
           href="cute.html"
           target="_blank"
           rel="noopener noreferrer"
@@ -778,6 +829,7 @@
           <span data-lang="en" hidden>Click here for a surprise!</span>
         </a>
       </footer>
+      <!--rodapé-->
     </main>
     <script src="script.js"></script>
   </body>
